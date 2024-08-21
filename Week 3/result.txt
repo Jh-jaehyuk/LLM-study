@@ -1,0 +1,322 @@
+/opt/homebrew/anaconda3/envs/torch/bin/python /Users/j213h/Jh/SK-Networks-AI-Camp/Study/LLM-study/codes/second/training_transformer.py 
+Model Parameter
+{'src_vocab_size': 11509, 'trg_vocab_size': 10837, 'src_pad_idx': 1, 'trg_pad_idx': 1, 'embed_size': 512, 'num_layers': 3, 'forward_expansion': 2, 'heads': 8, 'dropout': 0.1, 'device': 'mps', 'max_length': 140}
+--------------------------------------------------
+현재 Device: mps
+------------------------------
+1번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [01:44<00:16,  1.65it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a a a a a a a . a a . <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [01:58<00:00,  1.91it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man in a a a a a a . . . <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 1, Train loss: 5.712, Val loss: 5.091, Epoch time = 119.073s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+2번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [01:45<00:15,  1.77it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a a a a a a a a . . . <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [01:59<00:00,  1.90it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man in a a a a a a a . <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 2, Train loss: 4.998, Val loss: 4.928, Epoch time = 119.369s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+3번째 epoch 실행
+  0%|          | 0/227 [00:00<?, ?it/s]► Dataset is "training"
+ 88%|████████▊ | 200/227 [01:49<00:15,  1.73it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a black a and and a a . a . . <eos> . . . . <eos> <eos> <eos> . . <eos> <eos> . <eos> <eos> <eos>
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:04<00:00,  1.82it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man in in a a in a a . <eos> . . . . . . . . . . <eos> . . . <eos>
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 3, Train loss: 4.792, Val loss: 4.600, Epoch time = 124.975s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+4번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [01:45<00:15,  1.77it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a blue is in in a street . a . . <eos> . . . . . . . . . . . . . . <eos>
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:00<00:00,  1.89it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man in in a red in a street . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 4, Train loss: 4.419, Val loss: 4.256, Epoch time = 120.282s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+5번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:14<00:20,  1.29it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man is a blue shirt is in a street . the street . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:33<00:00,  1.48it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man in in a red in a street . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 5, Train loss: 4.142, Val loss: 4.111, Epoch time = 153.566s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+6번째 epoch 실행
+► Dataset is "training"
+ 89%|████████▊ | 201/227 [02:12<00:16,  1.54it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a blue shirt is is a street . a street . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:28<00:00,  1.53it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man in in a red in a field . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 6, Train loss: 3.964, Val loss: 3.937, Epoch time = 148.189s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+7번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:18<00:24,  1.11it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a blue shirt is in a street of a building . <eos> . . . . . . . . . . . . . <eos> .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:41<00:00,  1.41it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man is on a red in the field . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 7, Train loss: 3.823, Val loss: 3.827, Epoch time = 161.346s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+8번째 epoch 실행
+► Dataset is "training"
+ 89%|████████▊ | 201/227 [02:08<00:19,  1.34it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a white are on in a air of the building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:26<00:00,  1.55it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man is on a red on the field . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 8, Train loss: 3.702, Val loss: 3.752, Epoch time = 146.953s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+9번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:29<00:24,  1.09it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a orange shirt is in a middle of a building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:51<00:00,  1.32it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A man man sitting on a red on the field . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 9, Train loss: 3.603, Val loss: 3.678, Epoch time = 171.658s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+10번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:08<00:18,  1.49it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a blue dress is in a water of a building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:26<00:00,  1.55it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A older man sitting on a red on the mouth . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 10, Train loss: 3.513, Val loss: 3.621, Epoch time = 146.296s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+11번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:07<00:21,  1.27it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a blue shirt is in a water of the building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:26<00:00,  1.55it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A older man sitting on a red on the mouth . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 11, Train loss: 3.432, Val loss: 3.542, Epoch time = 146.207s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+12번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:06<00:16,  1.67it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a orange shirt is in front middle of the building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:25<00:00,  1.55it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A older man sitting on a red on the mouth . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 12, Train loss: 3.353, Val loss: 3.485, Epoch time = 146.139s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+13번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:18<00:21,  1.26it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a orange shirt is in front middle of a building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:38<00:00,  1.43it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A older man sitting on a red on the mouth . <eos> . . . . . . . . . . . . . . .
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 13, Train loss: 3.285, Val loss: 3.439, Epoch time = 158.609s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+14번째 epoch 실행
+► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:02<00:20,  1.33it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a orange shirt is in front middle of a building . <eos> . . . . . . . . . . <eos> . . . <eos>
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:21<00:00,  1.61it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A older man sits on a table on the mouth . <eos> . . . . . . . . . . . . . . <eos>
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 14, Train loss: 3.215, Val loss: 3.386, Epoch time = 141.381s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+------------------------------
+15번째 epoch 실행
+  0%|          | 0/227 [00:00<?, ?it/s]► Dataset is "training"
+ 88%|████████▊ | 200/227 [02:07<00:21,  1.25it/s]
+200번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un homme en uniforme orange pose au milieu d' une rue .
+prd :  A man in a orange is is in front middle of a building . <eos> . . . . . . . . . . . . . . .
+trg :  A man in an orange uniform poses in the middle of a street .
+
+100%|██████████| 227/227 [02:23<00:00,  1.58it/s]
+► Dataset is "validation"
+
+5번째 batch에 있는 0번째 문장 예측 결과 확인
+src :  Un vieil homme est assis avec un plateau sur ses genoux .
+prd :  A older man sits on a table on the mouth . <eos> . . . . . . . <eos> . . . . . . <eos>
+trg :  An old man sits with a tray in his lap .
+
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+Epoch: 15, Train loss: 3.149, Val loss: 3.331, Epoch time = 143.916s
+----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*----*
+
+
+Process finished with exit code 0

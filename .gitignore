@@ -1,0 +1,8 @@
+# exclude .DS_Store
+.DS_Store
+
+# exclude .idea
+.idea/
+
+# exclude __pycache__
+__pycache__/
