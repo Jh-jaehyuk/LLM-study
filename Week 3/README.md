@@ -63,7 +63,7 @@ Self-Attention이 자기 자신과 비교했다면,
 ![image](https://github.com/user-attachments/assets/ffb01ae3-511a-406f-8a3f-ae0a0a8f01d9)  
 ![image](https://github.com/user-attachments/assets/a6808b16-08be-49c7-9f9e-2907158d1fb3)  
   
-===
+---
 ### 결 론
 * **Masked Self-Attention**  
 다음 단어를 예측하는데, 뒤의 단어를 미리 알게되는 것은 반칙이므로   
